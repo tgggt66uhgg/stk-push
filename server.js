@@ -12,18 +12,18 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ====== Configuration - update env or keep these for testing ======
-const PAYNECTA_EMAIL = process.env.PAYNECTA_EMAIL || "ceofreddy254@gmail.com";
-const PAYNECTA_API_KEY = process.env.PAYNECTA_API_KEY || "hmp_qRLRJKTcVe4BhEQyp7GX5bttJTPzgYUUBU8wPZgO";
-const PAYNECTA_CODE = process.env.PAYNECTA_CODE || "PNT_109820";
+const PAYNECTA_EMAIL = process.env.PAYNECTA_EMAIL || "ronoshardrack99@gmail.com";
+const PAYNECTA_API_KEY = process.env.PAYNECTA_API_KEY || "hmp_EaQtJIrOPt0qvxqv46mt7IAfc2pAGsyQUeTqgBK6";
+const PAYNECTA_CODE = process.env.PAYNECTA_CODE || "PNT_171979";
 
 // The callback URL PayNecta will call (use your tested backend domain)
-const CALLBACK_URL = process.env.CALLBACK_URL || "https://techspacefinance.onrender.com";
+const CALLBACK_URL = process.env.CALLBACK_URL || "https://fintechloans.onrender.com/";
 
 // JSON storage file for receipts
 const receiptsFile = path.join(__dirname, "receipts.json");
 
 // CORS origin: keep frontend intact
-const FRONTEND_ORIGIN = "https://techspacefinance.onrender.com";
+const FRONTEND_ORIGIN = "https://fintechloans.onrender.com/";
 
 // Middleware
 app.use(bodyParser.json());
